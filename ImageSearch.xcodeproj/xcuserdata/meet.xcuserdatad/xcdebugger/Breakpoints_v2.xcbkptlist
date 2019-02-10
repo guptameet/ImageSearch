@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageSearch/Utils/QueryService.swift"
+            timestampString = "571470266.125493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getSearchResults(searchTerm:page:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ImageSearch.QueryService.getSearchResults(searchTerm: Swift.String, page: Swift.Int, completion: (Swift.Optional&lt;Swift.Array&lt;ImageSearch.Picture&gt;&gt;, Swift.String, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "ImageSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meet/Desktop/ImageSearch/ImageSearch/Utils/QueryService.swift"
+                  timestampString = "571470064.772316"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1378">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ImageSearch.QueryService.getSearchResults(searchTerm: Swift.String, page: Swift.Int, completion: (Swift.Optional&lt;Swift.Array&lt;ImageSearch.Picture&gt;&gt;, Swift.String, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "ImageSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/meet/Desktop/ImageSearch/ImageSearch/Utils/QueryService.swift"
+                  timestampString = "571470064.775344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageSearch/ViewModel/PictureViewerViewModel.swift"
+            timestampString = "571470266.125646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "queryString"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
