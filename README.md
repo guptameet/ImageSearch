@@ -1,6 +1,8 @@
 # Image Search
 
-Image search enabled by Flicker Image Search API
+Image search enabled by Flicker Image Search API.
+
+The project uses MVVM architectural pattern. 
 
 ## Demo & Screenshots
 
@@ -8,9 +10,7 @@ Image search enabled by Flicker Image Search API
 
 ## Tech/framework used
 
-XCode 10.1
-
-Swift 4.2
+XCode 10.1, Swift 4.2
 
 Flicker Photo Search APIs
 
