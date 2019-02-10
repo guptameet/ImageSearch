@@ -5,8 +5,6 @@ Image search enabled by Flicker Image Search API
 ## Demo & Screenshots
 
 ![Demo](https://i.imgur.com/bmTwwQL.gif)
-![Screen Shots](https://i.imgur.com/lpMq0Kf.png)
-![Screen Shots](https://i.imgur.com/He2496i.png)
 
 ## Tech/framework used
 
