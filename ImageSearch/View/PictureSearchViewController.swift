@@ -18,7 +18,7 @@ class PictureSearchViewController: UIViewController {
 
     fileprivate var viewModel: PictureViewerViewModel? {
         didSet {
-            refreshView()
+            imageCollectionView.reloadData()
         }
     }
     
@@ -40,15 +40,17 @@ class PictureSearchViewController: UIViewController {
         })
     }
 
+    
+    /// Initial Collection view setting
     fileprivate func setupCollectionView() {
         
         imageCollectionView.register(UINib(nibName: String(describing: PictureCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PictureCell.self))
     }
     
-    fileprivate func refreshView() {
-        imageCollectionView.reloadData()
-    }
     
+    /// For fresh query search
+    ///
+    /// - Parameter sender: Button sender
     @IBAction func searchClicked(_ sender: Any) {
         isLoading = true
         viewModel?.queryString = queryTextField.text ?? ""
@@ -87,7 +89,7 @@ extension PictureSearchViewController:UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if ((imageCollectionView.contentOffset.y + imageCollectionView.frame.size.height) >= imageCollectionView.contentSize.height && isLoading == false){
             isLoading = true
-            viewModel?.queryString = queryTextField.text ?? ""
+            viewModel?.loadNextPage()
         }
     }
 }

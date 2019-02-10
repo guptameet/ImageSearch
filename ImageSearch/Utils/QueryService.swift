@@ -22,14 +22,13 @@ class QueryService {
     var currentPage = 1
     var nextPageAvailable = true
     
-    func getSearchResults(searchTerm: String, page: Int, completion: @escaping QueryResult) {
+    func getSearchResults(searchTerm: String, page: Int = 1, completion: @escaping QueryResult) {
 
         dataTask?.cancel()
         
         self.currentPage = page
         
-        if var urlComponents = URLComponents(string: "https://api.flickr.com/services/rest/") {
-            urlComponents.query = "method=flickr.photos.search&api_key=3e7cc266ae2b0e0d78e279ce8e361736&format=json&nojsoncallback=1&safe_search=1&text=\(searchTerm)&page=\(page)"
+        if let urlComponents = self.getSearchURL(withQuery: searchTerm, andPage: page) {
 
             guard let url = urlComponents.url else { return }
             
@@ -87,6 +86,12 @@ class QueryService {
                 errorMessage += "Problem parsing photoDictionary\n"
             }
         }
+    }
+    
+    func getSearchURL(withQuery query:String, andPage page:Int) -> URLComponents? {
+        var urlC = URLComponents(string: "https://api.flickr.com/services/rest/")
+        urlC?.query = "method=flickr.photos.search&api_key=3e7cc266ae2b0e0d78e279ce8e361736&format=json&nojsoncallback=1&safe_search=1&text=\(query)&page=\(page)"
+        return urlC
     }
     
 }

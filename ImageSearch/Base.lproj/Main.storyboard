@@ -47,7 +47,7 @@
                                 <rect key="frame" x="299" y="47" width="60" height="30"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
-                                    <action selector="searchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6z5-vu-c3A"/>
+                                    <action selector="searchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bh5-UW-RTc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,74 +67,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emptyView" destination="StB-6z-Kbg" id="t46-VD-dcy"/>
-                        <outlet property="errorLabel" destination="Krg-GT-AJA" id="T7L-hG-T5m"/>
-                        <outlet property="errorView" destination="Ow1-7D-Zgr" id="d4U-cy-800"/>
                         <outlet property="imageCollectionView" destination="a21-0C-MYz" id="crG-ZE-xQg"/>
-                        <outlet property="loadingView" destination="Drc-uz-S0B" id="JlN-gE-NpE"/>
                         <outlet property="queryTextField" destination="CO5-D2-PfP" id="54P-Wy-77p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="StB-6z-Kbg" userLabel="Empty View">
-                    <rect key="frame" x="0.0" y="0.0" width="335" height="563"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results! Try searching for something else." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-Qk-W2F">
-                            <rect key="frame" x="57.5" y="261" width="220.5" height="41"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="Tez-Qk-W2F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="StB-6z-Kbg" secondAttribute="leading" constant="20" id="DgE-KY-xXb"/>
-                        <constraint firstItem="Tez-Qk-W2F" firstAttribute="centerX" secondItem="StB-6z-Kbg" secondAttribute="centerX" id="S0f-mv-kY7"/>
-                        <constraint firstItem="Tez-Qk-W2F" firstAttribute="centerY" secondItem="StB-6z-Kbg" secondAttribute="centerY" id="UPh-35-0Mi"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="Nyo-nG-dtB"/>
-                </view>
-                <view contentMode="scaleToFill" id="Drc-uz-S0B" userLabel="Loading View">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-Ms-qvR">
-                            <rect key="frame" x="101.5" y="45.5" width="37" height="37"/>
-                        </activityIndicatorView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="RDd-Ms-qvR" firstAttribute="centerX" secondItem="mfa-qh-QtI" secondAttribute="centerX" id="aPN-Bz-Pou"/>
-                        <constraint firstItem="RDd-Ms-qvR" firstAttribute="centerY" secondItem="mfa-qh-QtI" secondAttribute="centerY" id="euq-uU-uQI"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="mfa-qh-QtI"/>
-                </view>
-                <view contentMode="scaleToFill" id="Ow1-7D-Zgr" userLabel="Error View">
-                    <rect key="frame" x="0.0" y="0.0" width="335" height="563"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVn-7i-KGo">
-                            <rect key="frame" x="136" y="250.5" width="63" height="29"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krg-GT-AJA">
-                            <rect key="frame" x="126" y="283.5" width="83.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="GVn-7i-KGo" firstAttribute="centerX" secondItem="Ow1-7D-Zgr" secondAttribute="centerX" id="Ig5-aD-Igt"/>
-                        <constraint firstItem="GVn-7i-KGo" firstAttribute="bottom" secondItem="Ow1-7D-Zgr" secondAttribute="centerY" constant="-2" id="Juo-F6-esx"/>
-                        <constraint firstItem="Krg-GT-AJA" firstAttribute="top" secondItem="Ow1-7D-Zgr" secondAttribute="centerY" constant="2" id="Oyo-Tk-BCL"/>
-                        <constraint firstItem="Krg-GT-AJA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ow1-7D-Zgr" secondAttribute="leading" constant="20" id="lNT-09-Swc"/>
-                        <constraint firstItem="Krg-GT-AJA" firstAttribute="centerX" secondItem="Ow1-7D-Zgr" secondAttribute="centerX" id="zzC-0n-bPJ"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="Bqt-Jg-Dv1"/>
-                </view>
             </objects>
             <point key="canvasLocation" x="112.8" y="127.28635682158921"/>
         </scene>

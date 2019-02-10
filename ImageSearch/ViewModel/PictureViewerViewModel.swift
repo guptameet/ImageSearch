@@ -12,17 +12,11 @@ class PictureViewerViewModel {
     
     var queryString = "" {
         didSet {
-            if prevQuery == queryString {
-                nextPage += 1
-                getQueryResults(ForQuery: queryString, andPage: self.nextPage)
-            }else{
-                prevQuery = queryString
-                getQueryResults(ForQuery: queryString)
-            }
+            nextPage = 1
+            getQueryResults()
         }
     }
     
-    var prevQuery = ""
     
     var nextPageAvailable = true
     
@@ -32,9 +26,21 @@ class PictureViewerViewModel {
     
     let queryService = QueryService()
     
-    fileprivate func getQueryResults(ForQuery q:String, andPage page:Int = 1) {
+    
+    /// Method to load new image for query search
+    fileprivate func getQueryResults() {
+        queryService.getSearchResults(searchTerm: self.queryString) {[weak self] (pictures, error, nextPage) in
+            self?.nextPageAvailable = nextPage
+            self?.pictures.value = pictures
+        }
+    }
+    
+    
+    /// To load next page. Exposed for VC to use.
+    func loadNextPage() {
         if nextPageAvailable {
-            queryService.getSearchResults(searchTerm: q, page: page) {[weak self] (pictures, error, nextPage) in
+            self.nextPage += 1
+            queryService.getSearchResults(searchTerm: self.queryString, page: self.nextPage) {[weak self] (pictures, error, nextPage) in
                 self?.nextPageAvailable = nextPage
                 self?.pictures.value = pictures
             }
