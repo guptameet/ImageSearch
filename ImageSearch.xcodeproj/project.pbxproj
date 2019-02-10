@@ -17,7 +17,6 @@
 		152C2C00220FF91300CD6E7D /* QueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FD556220FBF4400937DDF /* QueryResult.swift */; };
 		152C2C02220FF93A00CD6E7D /* PictureModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C2C01220FF93A00CD6E7D /* PictureModelTests.swift */; };
 		152C2C042210080400CD6E7D /* QueryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C2C032210080400CD6E7D /* QueryServiceTests.swift */; };
-		152C2C062210081B00CD6E7D /* PictureViewerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C2C052210081B00CD6E7D /* PictureViewerModelTests.swift */; };
 		153FD520220F397600937DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FD51F220F397600937DDF /* AppDelegate.swift */; };
 		153FD522220F397600937DDF /* PictureSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FD521220F397600937DDF /* PictureSearchViewController.swift */; };
 		153FD525220F397600937DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153FD523220F397600937DDF /* Main.storyboard */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		152C2C01220FF93A00CD6E7D /* PictureModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModelTests.swift; sourceTree = "<group>"; };
 		152C2C032210080400CD6E7D /* QueryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryServiceTests.swift; sourceTree = "<group>"; };
-		152C2C052210081B00CD6E7D /* PictureViewerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerModelTests.swift; sourceTree = "<group>"; };
 		153FD51C220F397600937DDF /* ImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		153FD51F220F397600937DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		153FD521220F397600937DDF /* PictureSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSearchViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				153FD536220F397800937DDF /* Info.plist */,
 				152C2C01220FF93A00CD6E7D /* PictureModelTests.swift */,
 				152C2C032210080400CD6E7D /* QueryServiceTests.swift */,
-				152C2C052210081B00CD6E7D /* PictureViewerModelTests.swift */,
 			);
 			path = ImageSearchTests;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 			files = (
 				152C2C00220FF91300CD6E7D /* QueryResult.swift in Sources */,
 				152C2BF9220FF8D800CD6E7D /* Bind.swift in Sources */,
-				152C2C062210081B00CD6E7D /* PictureViewerModelTests.swift in Sources */,
 				152C2C042210080400CD6E7D /* QueryServiceTests.swift in Sources */,
 				152C2C02220FF93A00CD6E7D /* PictureModelTests.swift in Sources */,
 				152C2BFE220FF90C00CD6E7D /* PictureViewerViewModel.swift in Sources */,
